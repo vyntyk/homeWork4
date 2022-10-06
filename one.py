@@ -5,3 +5,10 @@
 # in Enter a real number: 8.98785
 # Enter the required accuracy '0.0001': 0.001
 # out 8.988
+
+from decimal import Decimal
+
+a = float(input("Введите число: "))
+number = Decimal(a)
+str = input("Точность: ")
+print(number.quantize(Decimal(str)))
